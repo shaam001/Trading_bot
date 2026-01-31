@@ -31,28 +31,28 @@
 ### 1. Market Order
 
 - Syntax: python cli.py [SYMBOL] [SIDE] MARKET [QUANTITY]
-- Example: Buy 0.001 BTC immediately.
+- Example: Buy 0.002 BTC immediately.
 
    ```Bash
-   python cli.py BTCUSDT BUY MARKET 0.001
+   python cli.py BTCUSDT BUY MARKET 0.002
    ```
 
 ### 2. Limit Order
 
 - Syntax: python cli.py [SYMBOL] [SIDE] LIMIT [QUANTITY] --price [PRICE]
 
-- Example: Sell 0.001 BTC if the price hits $95,000.
+- Example: Sell 0.002 BTC if the price hits $95,000.
 
    ```Bash
-   python cli.py BTCUSDT SELL LIMIT 0.001 --price 95000
+   python cli.py BTCUSDT SELL LIMIT 0.002 --price 95000
    ```
 
 ### 3. TWAP Strategy
 
 - Syntax: python cli.py [SYMBOL] [SIDE] TWAP [TOTAL_QTY] --duration [MINUTES] --splits [COUNT]
 
-- Example: Buy 0.01 BTC total, split into 5 orders over 10 minutes.
+- Example: Buy 0.01 BTC total, split into 4 orders over 2 minutes.
 
    ```Bash
-   python cli.py BTCUSDT BUY TWAP 0.01 --duration 10 --splits 5
+   python cli.py BTCUSDT BUY TWAP 0.01 --duration 2 --splits 4
    ```
