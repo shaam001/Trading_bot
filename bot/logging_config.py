@@ -3,7 +3,7 @@ import sys
 
 def setup_logging():
     """Configures logging to file and console."""
-    # how to write the log - time, name, level, message
+    # how to structure the log - time, name, level, message
     log_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     
     # File Handler

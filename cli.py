@@ -10,10 +10,10 @@ def main():
     # Argument Parser
     parser = argparse.ArgumentParser(description="Binance Futures Testnet Bot")
     parser.add_argument("symbol", type=str, help="Trading Pair (e.g., BTCUSDT)") # name of the coin
-    parser.add_argument("side", type=str, choices=["BUY", "SELL"], help="Order Side") # buy or sell
-    parser.add_argument("type", type=str, choices=["MARKET", "LIMIT", "TWAP"], help="Order Type") # type of order
+    parser.add_argument("side", type=str, choices=["BUY", "SELL"], help="Order Side")
+    parser.add_argument("type", type=str, choices=["MARKET", "LIMIT", "TWAP"], help="Order Type")
     parser.add_argument("quantity", type=float, help="Quantity") # amount to buy or sell
-    parser.add_argument("--price", type=float, help="Price (Required for LIMIT)", default=None) # price for limit orders
+    parser.add_argument("--price", type=float, help="Price (Required for LIMIT)", default=None)
     parser.add_argument("--duration", type=int, help="TWAP Duration (minutes)", default=5)
     parser.add_argument("--splits", type=int, help="TWAP Splits", default=5)
 
