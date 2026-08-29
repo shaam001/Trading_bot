@@ -56,4 +56,4 @@
 
 - Logic (bot/orders.py): The OrderManager class determines the strategy. For TWAP, it manages the timing loop; for standard orders, it formats the payload.
 
-- Connector (bot/client.py): The BinanceClientWrapper handles authentication via .env and executes the final API call using python-binance.
+- Connector (bot/client.py): The BinanceClientWrapper handles authentication via .env and executes the final API call using python-binance
