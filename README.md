@@ -51,7 +51,7 @@
 
 - Syntax: python cli.py [SYMBOL] [SIDE] TWAP [TOTAL_QTY] --duration [MINUTES] --splits [COUNT]
 
-- Example: Buy 0.01 BTC total, split into 4 orders over 2 minutes
+- Example: Buy 0.01 BTC total, split into 4 orders over 2 minutes.
 
    ```Bash
    python cli.py BTCUSDT BUY TWAP 0.01 --duration 2 --splits 4
